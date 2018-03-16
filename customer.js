@@ -1,5 +1,4 @@
 var mysql = require('mysql');
-var prompt = require('prompt');
 
 var connection = mysql.createConnection({
     host: 'localhost',
@@ -7,20 +6,6 @@ var connection = mysql.createConnection({
     password: 'root',
     database: 'bamazon'
 });
-
-// prompt
-var schema = {
-    properties: {
-        itemID: {
-            message: 'Enter the Item ID of the product you would like to purchase',
-            required: true
-        },
-    quantity: {
-        message: 'Enter the quantity of the product you would like to purchase',
-        required: true
-        }
-    }
-};
 
 // displays inventory from DB, runs prompt function, then starts nested function calls
 function displayInventory() {
@@ -30,18 +15,8 @@ function displayInventory() {
         for (var i = 0;i < rows.length; i++) {
             console.log('Item ID: ' + rows[i].itemID + ' Product Name: ' + rows[i].ProductName + ' Price: $' + rows[i].Price)
         }
-        runPrompt();
         });
     };
-    
-    function runPrompt(){
-        prompt.start();
-        prompt.get(schema, function(err, result) {
-            var orderID = result.itemID;
-            var orderQuantity = result.quantity;
-            processOrder(orderID, orderQuantity);
-            });
-        }
     
         function processOrder(id, quantity){
         connection.query('SELECT StockQuantity FROM products WHERE ItemID = ?', [id], function(err, rows, fields){
