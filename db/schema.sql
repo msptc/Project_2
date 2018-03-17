@@ -1,6 +1,6 @@
 DROP DATABASE IF EXISTS Warehouse_db;
 CREATE DATABASE Warehouse_db;
-USE AllSupply;
+USE Warehouse_db;
 
 CREATE TABLE Products (
     ItemID INT PRIMARY KEY AUTO_INCREMENT, 
