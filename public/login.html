@@ -18,30 +18,77 @@
 			<li><a href="user.html">User</a></li>
 			</ul>
 		</div>
+		<button id="SignOut">Signout</button>
+
 
 		<div id="main">
 			<h1>Login</h1>
 				<form>
-					<div>
+					<!-- <div>
 						<label>Name</label><br>
 						<input type="text" name="name">
-					</div>
+					</div> -->
 					<div>
-						<label>Username</label><br>
-						<input type="login" name="username">
+						<label>Email</label><br>
+						<input type="text" name="email" id="IDemail">
 					</div>
 					<div>
 						<label>Password</label><br>
-						<input type="password"></input>
+						<input type="text" id="IDpassword"></input>
 					</div>
 
-					<button type="submit">Send</button>
+					<button type="submit" id="login">Send</button>
 				</form>
 		</div>
 		<div id="footer">
+
 			<p>Inventory Depot &copy; 2018</p>
 		</div>
 
 	</div>
+<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+	<!-- <script src="assets/login.js"></script> -->
+	<script>
+	// Initialize Firebase
+	var config = {
+	  apiKey: "AIzaSyDThsSSmrM586vOqjUQPe1vThyIRIuaqwE",
+	  authDomain: "inventory-depot.firebaseapp.com",
+	  databaseURL: "https://inventory-depot.firebaseio.com",
+	  projectId: "inventory-depot",
+	  storageBucket: "inventory-depot.appspot.com",
+	  messagingSenderId: "621383880719"
+	};
+	firebase.initializeApp(config);
+	   //Getting the Email/Password and Signin button from the the inputs above.
+	   let signIn = document.getElementById('login');
+	   //Listening on thesignIn button click.
+	   signIn.addEventListener('click', (ev) => {
+	       let email = document.getElementById('IDemail').value;
+	       let password = document.getElementById('IDpassword').value;
+	       ev.preventDefault();
+	       console.log(email, password);
+	       firebase.auth().createUserWithEmailAndPassword(email, password)
+	           .then(user => {
+	               alert('you succeeded')
+	               //Handling the successful authentication.
+	               window.location = "../home.html";
+	           }).catch(function (error) {
+	           //Handling the error showcasing. });
+	               alert('you failed. try again')
+	       }, false);
+	   });
+
+
+
+	document.getElementById('SignOut','click',function(){
+		firebase.auth().signOut().then(function() {
+	 console.log("Logged out!")
+ }, function(error) {
+	 console.log(error.code);
+	 console.log(error.message);
+ });
+	})
+
+	</script>
 </body>
 </html>
