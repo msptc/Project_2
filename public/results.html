@@ -30,7 +30,7 @@
 			<p>Thank for shopping with Inventory Depot. we appreciate your business and please feel free to continue to shop with the largest e-commerce inventory.</p>
 		</div>
 
-		<h3>Store</h3>
+		<h3>Store Zipcode</h3>
 		<input type="text" name="store" id="storelocation"></input>
 		<h3>Product Name</h3>
 		<input type="text" name="product" id="productname"></input>
@@ -58,16 +58,17 @@
 
 		$("#query-btn").click(function(){
 
-	// 		$.ajaxPrefilter(function(options) {
-	// 		if (options.crossDomain && jQuery.support.cors) {
-	// 				var http = window.location.protocol === 'http:' ? 'http:' : 'https:';
-	// 				options.url = http + '//cors-anywhere.herokuapp.com/' + options.url;
-	// 		}
-	// });
+			$.ajaxPrefilter(function(options) {
+			if (options.crossDomain && jQuery.support.cors) {
+					var http = window.location.protocol === 'http:' ? 'http:' : 'https:';
+					options.url = http + '//cors-anywhere.herokuapp.com/' + options.url;
+			}
+	});
 
-			var query_param =$('#productname').val();
-			var psearch ="http://www.SupermarketAPI.com/api.asmx/SearchByProductName?APIKEY="+appID+"&ItemName="+query_param;
-
+			var query_product =$('#productname').val();
+			var query_location=$('#storelocation').val();
+			// var psearch ="http://www.SupermarketAPI.com/api.asmx/SearchByProductName?APIKEY="+appID+"&ItemName="+query_product+"&ZipCode="+query_location;
+			var psearch ="http://www.SupermarketAPI.com/api.asmx//StoresByZip?APIKEY="+appID+"&ZipCode="+query_location;
 
 
 			$.getJSON(psearch,function(json){
