@@ -3,15 +3,9 @@
 
 <head>
 	<title>Results | Inventory Depot</title>
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-	<style>
-	.itemdiv:nth-child(even) {
-	    background-color: rgb(135,206,235);
-	}
-	.itemdiv:nth-child(odd){
-		 background-color: rgb(74,170,165)
-	}
-	</style>
+
 </head>
 
 <body>
@@ -29,23 +23,27 @@
 		</div>
 
 		<div id="main">
-			<h1>Results</h1>
+			<h1 id="searchrequest">Results</h1>
 			<div id="Results">
 
 			</div>
 		</div>
 
 		<div id="message">
-			<h1>Thank you for the Purchase</h1>
+			<!-- <h1>Thank you for the Purchase</h1> -->
+
+
+			<!--Search input-->
+			<h3>Search for a product!</h3>
+			<input type="text" name="product" id="productname"></input>
+			<button id="query-btn">SEARCH PRODUCTS</button>
+			<br><br>
+			<h3>Or</h3>
+			<button id="trending">See Whats Trending!</button>
+			<br><br>
 			<p>Thank for shopping with Inventory Depot. we appreciate your business and please feel free to continue to shop with the largest e-commerce inventory.</p>
+
 		</div>
-
-		<h3>Store</h3>
-		<input type="text" name="store" id="storelocation"></input>
-		<h3>Product Name</h3>
-		<input type="text" name="product" id="productname"></input>
-		<button id="query-btn">SEARCH PRODUCTS</button>
-
 
 
 
@@ -55,77 +53,7 @@
 		</div>
 
 	</div>
-
-	<script>
-		$(document).ready(function() {
-			var appSMID = "31fe834a26";
-			var appWMID = "6gr6wmjn5syaa4dxx5kyjq66"
-			$.ajaxPrefilter(function(options) {
-				if (options.crossDomain && jQuery.support.cors) {
-					var http = window.location.protocol === 'http:' ? 'http:' : 'https:';
-					options.url = http + '//cors-anywhere.herokuapp.com/' + options.url;
-				}
-			});
-
-			$("#query-btn").click(function() {
-
-				// 		$.ajaxPrefilter(function(options) {
-				// 		if (options.crossDomain && jQuery.support.cors) {
-				// 				var http = window.location.protocol === 'http:' ? 'http:' : 'https:';
-				// 				options.url = http + '//cors-anywhere.herokuapp.com/' + options.url;
-				// 		}
-				// });
-
-				var query_param = $('#productname').val();
-				var psearch = "http://api.walmartlabs.com/v1/search?apiKey=" + appWMID + "&query=" + query_param;
-				// var psearch ="http://www.SupermarketAPI.com/api.asmx/SearchByProductName?APIKEY="+appSMID+"&ItemName="+query_param;
-
-
-
-
-				$.getJSON(psearch, function(res) {
-					// 	for (var i=0;i<res.items.length;i++){
-					// 	 var itemdiv=$('<div id="itemdiv">');
-					// 	 var itempicwin=$('<img id="itemwin">');
-					// 	 var itempic = res.items[0].mediumImage;
-					// 	 var itemName =res.items[0].name;
-					// 	 console.log(itempic);
-					// 	 console.log(itemName);
-					console.log(res);
-					// }
-					// .then(function(res){
-
-				}).then(function(res) {
-					for (var i = 0; i < res.items.length; i++) {
-						var itemdiv = $('<div class="itemdiv">');
-						var itempicwin = $('<img class="itemwin">');
-						var itemselecbutn =$('<button class="itemselc">Add</button>');
-						var imgrating =$('<img>').attr('src',res.items[i].customerRatingImage);
-						var itempic = res.items[i].mediumImage;
-						var itemName = $('<p>').text(res.items[i].name);
-						 // var itemRating= res.items[i].customerRatingImage;
-;
-						var itemprice= "$ "+res.items[i].salePrice;
-
-						itempicwin.attr("src",itempic);
-
-
-						itemdiv.append(itempicwin).append(itemprice).append(itemName).append(imgrating).append(itemselecbutn);
-						// itemdiv.append(itemprice);
-
-						$('#Results').append(itemdiv);
-
-
-						console.log(itempic);
-						console.log(itemName);
-						// console.log(itemRating);
-					}
-				})
-
-			})
-		});
-	</script>
-
+<script src="./assets/js/results.js"></script>
 </body>
 
 </html>
