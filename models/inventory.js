@@ -7,7 +7,7 @@ var connection = mysql.createConnection({
     database: 'Warehouse_db'
 });
 
-// displays inventory from DB, runs prompt function, then starts nested function calls
+// displays inventory from DB, then starts nested function calls
 function displayInventory() {
     connection.query('SELECT itemID, ProductName, Price FROM products', function(err, rows, fields) {
         if (err) throw err;
