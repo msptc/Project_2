@@ -1,49 +1,62 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-	<title>Login | Inventory Depot</title>
-</head>
-
-<body>
-	<div id="container">
-		<div id="header">
-			<h1>Inventory Depot</h1>
+	<html lang="en"> 
+	
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<title>Login | Inventory Depot</title>
+	</head>
+	
+	<body>
+	
+		<nav class="navbar navbar-inverse"> 
+		<div class="container-fluid">
+			<div class="navbar-header">	
+		<a class="navbar-brand"><strong>Inventory Depot</strong></a>
 		</div>
-		<div id="nav">
-			<ul>
-			<li><a href="home.html">Home</a></li>
-			<li><a class="active" href="login.html">Login</a></li>
-			<li><a href="results.html">Results</a></li>
-			<li><a href="user.html">User</a></li>
-			</ul>
+			<ul class="nav navbar-nav navbar-right">	
+				<li><a href="home.html" type="button" class="btn navbar-btn btn-danger" id="navbar-link"> Home </a></li>
+				<li><a href="login.html" type="button" class=" btn navbar-btn btn-danger"id="navbar-link"> Login </a></li>
+				<li><a href="results.html" type="button"class=" btn navbar-btn btn-danger"id="navbar-link"> Results </a></li>
+				<li><a href="user.html" type="button" class=" btn navbar-btn btn-danger"id="navbar-link"> User </a></li>
+				</ul>
+	</div>	
+	</nav>
+		<div class="container" id="main">
+			<div class="row">
+				<div class="col-lg-3" style="background-color:black; margin-left:435px">
+					<h1 style="text-align:center; color: gray">Login</h1>
+						<form class="form-inline">
+							<div class="form-group">
+								<div>
+								<label style="color:gray">Email</label><br>
+								<input type="text" name="name" class="form-control input-lg" id="IDemail">
+							<div>
+								<label style="color:gray">Password</label><br>
+								<input type="password"class="input-lg"id="IDpassword"></input>
+							</div>
+				</form>	
+				<br>
+							<button type="submit" class="btn btn-danger btn-block" id="login">Submit</button>
+							<button type="submit" class="btn btn-danger btn-block" id="SignOut">Signout</button>
+				<br>
+				</div>
+			</div>
 		</div>
-		<button id="SignOut">Signout</button>
-
-
-		<div id="main">
-			<h1>Login</h1>
-				<form>
-					<!-- <div>
-						<label>Name</label><br>
-						<input type="text" name="name">
-					</div> -->
-					<div>
-						<label>Email</label><br>
-						<input type="text" name="email" id="IDemail">
-					</div>
-					<div>
-						<label>Password</label><br>
-						<input type="text" id="IDpassword"></input>
-					</div>
-
-					<button type="submit" id="login">Send</button>
-				</form>
 		</div>
-		<div id="footer">
-
-			<p>Inventory Depot &copy; 2018</p>
-		</div>
+		<div class="row">
+			<div class="col-lg-12" style="text-align: center; 
+			background-color:black; color:gray; width:100%; 
+			position:fixed; left:0; bottom:0; 
+			padding-top:25px; padding-bottom:25px">
+		
+					Inventory Depot &copy; 2018
+				</div>
+		</div>	
 
 	</div>
 <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
@@ -77,9 +90,6 @@
 	               alert('you failed. try again')
 	       }, false);
 	   });
-
-
-
 	document.getElementById('SignOut','click',function(){
 		firebase.auth().signOut().then(function() {
 	 console.log("Logged out!")
@@ -88,7 +98,6 @@
 	 console.log(error.message);
  });
 	})
-
 	</script>
 </body>
 </html>
