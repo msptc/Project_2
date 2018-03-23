@@ -82,17 +82,17 @@
 	       console.log(email, password);
 	       firebase.auth().createUserWithEmailAndPassword(email, password)
 	           .then(user => {
-	               alert('you succeeded')
+	               alert('You have Successfully Logged In!')
 	               //Handling the successful authentication.
 	               window.location = "../home.html";
 	           }).catch(function (error) {
 	           //Handling the error showcasing. });
-	               alert('you failed. try again')
+	               alert('Login unsucessful! Please try again!')
 	       }, false);
 	   });
 	document.getElementById('SignOut','click',function(){
 		firebase.auth().signOut().then(function() {
-	 console.log("Logged out!")
+	 console.log("You have sucessfully logged out!")
  }, function(error) {
 	 console.log(error.code);
 	 console.log(error.message);
