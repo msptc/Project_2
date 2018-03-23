@@ -3,8 +3,8 @@ CREATE DATABASE Warehouse_db;
 USE Warehouse_db;
 
 CREATE TABLE Products (
-    ItemID INT PRIMARY KEY AUTO_INCREMENT, 
-    productname VARCHAR(255), 
-    departmentname VARCHAR(255), 
-    price DECIMAL(6,2), 
-    StockQuantity INT;
+    ItemId INT(10) PRIMARY KEY AUTO_INCREMENT, 
+    ProductName VARCHAR(255), 
+    Quantity INT(10)
+    Price DECIMAL(6,2), 
+    ProductDetails VARCHAR(255);
