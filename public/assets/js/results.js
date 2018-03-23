@@ -39,7 +39,7 @@ $(document).ready(function() {
       // .then(function(res){
 
     }).then(function(res) {
-      $('#searchrequest').html("Avalible Items For "+query_param)
+      $('#searchrequest').html("Available Items For "+query_param)
       for (var i = 0; i < res.items.length; i++) {
         var itemdiv = $('<div class="itemdiv">');
         var itempicwin = $('<img class="itemwin">');
