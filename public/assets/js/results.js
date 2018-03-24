@@ -9,7 +9,7 @@ $(document).ready(function() {
   });
 
 
-    ///////product search///////
+  ///////product search///////
   $("#query-btn").click(function() {
 
     // 		$.ajaxPrefilter(function(options) {
@@ -39,7 +39,7 @@ $(document).ready(function() {
       // .then(function(res){
 
     }).then(function(res) {
-      $('#searchrequest').html("Avalible Items For "+query_param)
+      $('#searchrequest').html("Available Items For " + query_param)
       for (var i = 0; i < res.items.length; i++) {
         var itemdiv = $('<div class="itemdiv">');
         var itempicwin = $('<img class="itemwin">');
@@ -73,7 +73,7 @@ $(document).ready(function() {
     $.getJSON(trensearch, function(res) {
       console.log(res);
     }).then(function(res) {
-        $('#searchrequest').html("Trending Seach Results");
+      $('#searchrequest').html("Trending Seach Results");
       for (var i = 0; i < res.items.length; i++) {
         var itemdiv = $('<div class="itemdiv">');
         var itempicwin = $('<img class="itemwin">');
@@ -88,11 +88,35 @@ $(document).ready(function() {
 
         $('#Results').prepend(itemdiv);
 
+      itemselecbutn.attr("name",res.items[i].name).attr("image",itempic).attr("price",itemprice);
+
+
+
 
 
       }
-    })
+      ////Item select for cart///
+    $('.itemselc').on('click', function() {
+       console.log(this.name+'  '+itemprice);
+       console.log(itempic);
+      // console.log(this.price);
+      // console.log(this.image);
+      // console.log(this);
+
+      $.ajax({
+        type: 'POST',
+        url: '/api/cart',
+        data : JSON.stringify({})
+      })
+
+
 
   })
+
+    })
+
+  });
+
+
 
 });
