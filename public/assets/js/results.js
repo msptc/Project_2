@@ -82,13 +82,14 @@ $(document).ready(function() {
         var itempic = res.items[i].mediumImage;
         var itemName = $('<p>').text(res.items[i].name);
         var itemprice = "$ " + res.items[i].salePrice;
+        var itemcartprice = res.items[i].salePrice;
 
         itempicwin.attr("src", itempic);
         itemdiv.append(itempicwin).append(itemprice).append(itemName).append(imgrating).append(itemselecbutn);
 
         $('#Results').prepend(itemdiv);
 
-      itemselecbutn.attr("name",res.items[i].name).attr("image",itempic).attr("price",itemprice);
+      itemselecbutn.attr("name",res.items[i].name).attr("image",itempic).attr("price",res.items[i].salePrice);
 
 
 
@@ -97,16 +98,23 @@ $(document).ready(function() {
       }
       ////Item select for cart///
     $('.itemselc').on('click', function() {
-       console.log(this.name+'  '+itemprice);
-       console.log(itempic);
-      // console.log(this.price);
-      // console.log(this.image);
-      // console.log(this);
+      var cartprice =$(this).attr("price");
+      var cartpic = $(this).attr("image");
+      var cartname= $(this).attr("name");
+       var quantity =0;
+        quantity++;
+      console.log(cartprice);
+
 
       $.ajax({
         type: 'POST',
         url: '/api/cart',
-        data : JSON.stringify({})
+        data: JSON.stringify({ ProductName: cartname, Quantity: quantity, Price: cartprice}),
+        contentType: 'application/json',
+        dataType:'json'
+
+      }).then(function(res){
+        console.log(res);
       })
 
 
