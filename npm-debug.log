@@ -1,0 +1,588 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'path' ]
+2 info using npm@3.10.10
+3 info using node@v6.11.2
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData path
+8 silly fetchNamedPackageData path
+9 silly mapToRegistry name path
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'path',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'path',
+12 silly mapToRegistry   name: 'path',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/path
+14 verbose request uri https://registry.npmjs.org/path
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 4:42:51 PM
+17 verbose request id 1fda6efe53b00596
+18 verbose etag "5aa8892c-1886"
+19 verbose lastModified Wed, 14 Mar 2018 2:30:04 GMT
+20 http request GET https://registry.npmjs.org/path
+21 http 304 https://registry.npmjs.org/path
+22 verbose headers { date: 'Fri, 23 Mar 2018 20:42:50 GMT',
+22 verbose headers   via: '1.1 varnish',
+22 verbose headers   'cache-control': 'max-age=300',
+22 verbose headers   etag: '"5aa8892c-1886"',
+22 verbose headers   age: '12719',
+22 verbose headers   connection: 'keep-alive',
+22 verbose headers   'x-served-by': 'cache-pdk17834-PDK',
+22 verbose headers   'x-cache': 'HIT',
+22 verbose headers   'x-cache-hits': '1',
+22 verbose headers   'x-timer': 'S1521837771.697089,VS0,VE1',
+22 verbose headers   vary: 'Accept-Encoding, Accept' }
+23 silly get cb [ 304,
+23 silly get   { date: 'Fri, 23 Mar 2018 20:42:50 GMT',
+23 silly get     via: '1.1 varnish',
+23 silly get     'cache-control': 'max-age=300',
+23 silly get     etag: '"5aa8892c-1886"',
+23 silly get     age: '12719',
+23 silly get     connection: 'keep-alive',
+23 silly get     'x-served-by': 'cache-pdk17834-PDK',
+23 silly get     'x-cache': 'HIT',
+23 silly get     'x-cache-hits': '1',
+23 silly get     'x-timer': 'S1521837771.697089,VS0,VE1',
+23 silly get     vary: 'Accept-Encoding, Accept' } ]
+24 verbose etag https://registry.npmjs.org/path from cache
+25 verbose get saving path to C:\Users\TaSM Image\AppData\Roaming\npm-cache\registry.npmjs.org\path\.cache.json
+26 verbose correctMkdir C:\Users\TaSM Image\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+27 silly install normalizeTree
+28 silly loadCurrentTree Finishing
+29 silly loadIdealTree Starting
+30 silly install loadIdealTree
+31 silly cloneCurrentTree Starting
+32 silly install cloneCurrentTreeToIdealTree
+33 silly cloneCurrentTree Finishing
+34 silly loadShrinkwrap Starting
+35 silly install loadShrinkwrap
+36 silly loadShrinkwrap Finishing
+37 silly loadAllDepsIntoIdealTree Starting
+38 silly install loadAllDepsIntoIdealTree
+39 silly resolveWithNewModule path@0.12.7 checking installable status
+40 silly cache add args [ 'path', null ]
+41 verbose cache add spec path
+42 silly cache add parsed spec Result {
+42 silly cache add   raw: 'path',
+42 silly cache add   scope: null,
+42 silly cache add   escapedName: 'path',
+42 silly cache add   name: 'path',
+42 silly cache add   rawSpec: '',
+42 silly cache add   spec: 'latest',
+42 silly cache add   type: 'tag' }
+43 silly addNamed path@latest
+44 verbose addNamed "latest" is being treated as a dist-tag for path
+45 info addNameTag [ 'path', 'latest' ]
+46 silly mapToRegistry name path
+47 silly mapToRegistry using default registry
+48 silly mapToRegistry registry https://registry.npmjs.org/
+49 silly mapToRegistry data Result {
+49 silly mapToRegistry   raw: 'path',
+49 silly mapToRegistry   scope: null,
+49 silly mapToRegistry   escapedName: 'path',
+49 silly mapToRegistry   name: 'path',
+49 silly mapToRegistry   rawSpec: '',
+49 silly mapToRegistry   spec: 'latest',
+49 silly mapToRegistry   type: 'tag' }
+50 silly mapToRegistry uri https://registry.npmjs.org/path
+51 verbose addNameTag registry:https://registry.npmjs.org/path not in flight; fetching
+52 verbose get https://registry.npmjs.org/path not expired, no request
+53 silly addNameTag next cb for path with tag latest
+54 silly addNamed path@0.12.7
+55 verbose addNamed "0.12.7" is a plain semver version for path
+56 silly cache afterAdd path@0.12.7
+57 verbose afterAdd C:\Users\TaSM Image\AppData\Roaming\npm-cache\path\0.12.7\package\package.json not in flight; writing
+58 verbose correctMkdir C:\Users\TaSM Image\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+59 verbose afterAdd C:\Users\TaSM Image\AppData\Roaming\npm-cache\path\0.12.7\package\package.json written
+60 silly fetchNamedPackageData process
+61 silly mapToRegistry name process
+62 silly mapToRegistry using default registry
+63 silly mapToRegistry registry https://registry.npmjs.org/
+64 silly mapToRegistry data Result {
+64 silly mapToRegistry   raw: 'process',
+64 silly mapToRegistry   scope: null,
+64 silly mapToRegistry   escapedName: 'process',
+64 silly mapToRegistry   name: 'process',
+64 silly mapToRegistry   rawSpec: '',
+64 silly mapToRegistry   spec: 'latest',
+64 silly mapToRegistry   type: 'tag' }
+65 silly mapToRegistry uri https://registry.npmjs.org/process
+66 silly fetchNamedPackageData util
+67 silly mapToRegistry name util
+68 silly mapToRegistry using default registry
+69 silly mapToRegistry registry https://registry.npmjs.org/
+70 silly mapToRegistry data Result {
+70 silly mapToRegistry   raw: 'util',
+70 silly mapToRegistry   scope: null,
+70 silly mapToRegistry   escapedName: 'util',
+70 silly mapToRegistry   name: 'util',
+70 silly mapToRegistry   rawSpec: '',
+70 silly mapToRegistry   spec: 'latest',
+70 silly mapToRegistry   type: 'tag' }
+71 silly mapToRegistry uri https://registry.npmjs.org/util
+72 verbose request uri https://registry.npmjs.org/process
+73 verbose request no auth needed
+74 info attempt registry request try #1 at 4:42:51 PM
+75 verbose etag "5a9622c4-6220"
+76 verbose lastModified Wed, 28 Feb 2018 3:32:20 GMT
+77 http request GET https://registry.npmjs.org/process
+78 verbose request uri https://registry.npmjs.org/util
+79 verbose request no auth needed
+80 info attempt registry request try #1 at 4:42:51 PM
+81 verbose etag "59f7e314-1953"
+82 verbose lastModified Tue, 31 Oct 2017 2:42:28 GMT
+83 http request GET https://registry.npmjs.org/util
+84 http 304 https://registry.npmjs.org/process
+85 verbose headers { date: 'Fri, 23 Mar 2018 20:42:50 GMT',
+85 verbose headers   via: '1.1 varnish',
+85 verbose headers   'cache-control': 'max-age=300',
+85 verbose headers   etag: '"5a9622c4-6220"',
+85 verbose headers   age: '10375',
+85 verbose headers   connection: 'keep-alive',
+85 verbose headers   'x-served-by': 'cache-pdk17834-PDK',
+85 verbose headers   'x-cache': 'HIT',
+85 verbose headers   'x-cache-hits': '11',
+85 verbose headers   'x-timer': 'S1521837771.782892,VS0,VE0',
+85 verbose headers   vary: 'Accept-Encoding, Accept' }
+86 silly get cb [ 304,
+86 silly get   { date: 'Fri, 23 Mar 2018 20:42:50 GMT',
+86 silly get     via: '1.1 varnish',
+86 silly get     'cache-control': 'max-age=300',
+86 silly get     etag: '"5a9622c4-6220"',
+86 silly get     age: '10375',
+86 silly get     connection: 'keep-alive',
+86 silly get     'x-served-by': 'cache-pdk17834-PDK',
+86 silly get     'x-cache': 'HIT',
+86 silly get     'x-cache-hits': '11',
+86 silly get     'x-timer': 'S1521837771.782892,VS0,VE0',
+86 silly get     vary: 'Accept-Encoding, Accept' } ]
+87 verbose etag https://registry.npmjs.org/process from cache
+88 verbose get saving process to C:\Users\TaSM Image\AppData\Roaming\npm-cache\registry.npmjs.org\process\.cache.json
+89 verbose correctMkdir C:\Users\TaSM Image\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+90 silly resolveWithNewModule process@0.11.10 checking installable status
+91 silly cache add args [ 'process@^0.11.1', null ]
+92 verbose cache add spec process@^0.11.1
+93 silly cache add parsed spec Result {
+93 silly cache add   raw: 'process@^0.11.1',
+93 silly cache add   scope: null,
+93 silly cache add   escapedName: 'process',
+93 silly cache add   name: 'process',
+93 silly cache add   rawSpec: '^0.11.1',
+93 silly cache add   spec: '>=0.11.1 <0.12.0',
+93 silly cache add   type: 'range' }
+94 silly addNamed process@>=0.11.1 <0.12.0
+95 verbose addNamed ">=0.11.1 <0.12.0" is a valid semver range for process
+96 silly addNameRange { name: 'process', range: '>=0.11.1 <0.12.0', hasData: false }
+97 silly mapToRegistry name process
+98 silly mapToRegistry using default registry
+99 silly mapToRegistry registry https://registry.npmjs.org/
+100 silly mapToRegistry data Result {
+100 silly mapToRegistry   raw: 'process',
+100 silly mapToRegistry   scope: null,
+100 silly mapToRegistry   escapedName: 'process',
+100 silly mapToRegistry   name: 'process',
+100 silly mapToRegistry   rawSpec: '',
+100 silly mapToRegistry   spec: 'latest',
+100 silly mapToRegistry   type: 'tag' }
+101 silly mapToRegistry uri https://registry.npmjs.org/process
+102 verbose addNameRange registry:https://registry.npmjs.org/process not in flight; fetching
+103 verbose get https://registry.npmjs.org/process not expired, no request
+104 silly addNameRange number 2 { name: 'process', range: '>=0.11.1 <0.12.0', hasData: true }
+105 silly addNameRange versions [ 'process',
+105 silly addNameRange   [ '0.4.9',
+105 silly addNameRange     '0.5.0',
+105 silly addNameRange     '0.5.1',
+105 silly addNameRange     '0.5.2',
+105 silly addNameRange     '0.6.0',
+105 silly addNameRange     '0.7.0',
+105 silly addNameRange     '0.8.0',
+105 silly addNameRange     '0.9.0',
+105 silly addNameRange     '0.10.0',
+105 silly addNameRange     '0.10.1',
+105 silly addNameRange     '0.11.0',
+105 silly addNameRange     '0.11.1',
+105 silly addNameRange     '0.11.2',
+105 silly addNameRange     '0.11.3',
+105 silly addNameRange     '0.11.4',
+105 silly addNameRange     '0.11.5',
+105 silly addNameRange     '0.11.6',
+105 silly addNameRange     '0.11.7',
+105 silly addNameRange     '0.11.8',
+105 silly addNameRange     '0.11.9',
+105 silly addNameRange     '0.11.10' ] ]
+106 silly addNamed process@0.11.10
+107 verbose addNamed "0.11.10" is a plain semver version for process
+108 silly cache afterAdd process@0.11.10
+109 verbose afterAdd C:\Users\TaSM Image\AppData\Roaming\npm-cache\process\0.11.10\package\package.json not in flight; writing
+110 verbose correctMkdir C:\Users\TaSM Image\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+111 http 304 https://registry.npmjs.org/util
+112 verbose headers { date: 'Fri, 23 Mar 2018 20:42:50 GMT',
+112 verbose headers   via: '1.1 varnish',
+112 verbose headers   'cache-control': 'max-age=300',
+112 verbose headers   etag: '"59f7e314-1953"',
+112 verbose headers   age: '11383',
+112 verbose headers   connection: 'keep-alive',
+112 verbose headers   'x-served-by': 'cache-pdk17838-PDK',
+112 verbose headers   'x-cache': 'HIT',
+112 verbose headers   'x-cache-hits': '9',
+112 verbose headers   'x-timer': 'S1521837771.807469,VS0,VE0',
+112 verbose headers   vary: 'Accept-Encoding, Accept' }
+113 silly get cb [ 304,
+113 silly get   { date: 'Fri, 23 Mar 2018 20:42:50 GMT',
+113 silly get     via: '1.1 varnish',
+113 silly get     'cache-control': 'max-age=300',
+113 silly get     etag: '"59f7e314-1953"',
+113 silly get     age: '11383',
+113 silly get     connection: 'keep-alive',
+113 silly get     'x-served-by': 'cache-pdk17838-PDK',
+113 silly get     'x-cache': 'HIT',
+113 silly get     'x-cache-hits': '9',
+113 silly get     'x-timer': 'S1521837771.807469,VS0,VE0',
+113 silly get     vary: 'Accept-Encoding, Accept' } ]
+114 verbose etag https://registry.npmjs.org/util from cache
+115 verbose get saving util to C:\Users\TaSM Image\AppData\Roaming\npm-cache\registry.npmjs.org\util\.cache.json
+116 verbose correctMkdir C:\Users\TaSM Image\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+117 verbose afterAdd C:\Users\TaSM Image\AppData\Roaming\npm-cache\process\0.11.10\package\package.json written
+118 silly resolveWithNewModule util@0.10.3 checking installable status
+119 silly cache add args [ 'util@^0.10.3', null ]
+120 verbose cache add spec util@^0.10.3
+121 silly cache add parsed spec Result {
+121 silly cache add   raw: 'util@^0.10.3',
+121 silly cache add   scope: null,
+121 silly cache add   escapedName: 'util',
+121 silly cache add   name: 'util',
+121 silly cache add   rawSpec: '^0.10.3',
+121 silly cache add   spec: '>=0.10.3 <0.11.0',
+121 silly cache add   type: 'range' }
+122 silly addNamed util@>=0.10.3 <0.11.0
+123 verbose addNamed ">=0.10.3 <0.11.0" is a valid semver range for util
+124 silly addNameRange { name: 'util', range: '>=0.10.3 <0.11.0', hasData: false }
+125 silly mapToRegistry name util
+126 silly mapToRegistry using default registry
+127 silly mapToRegistry registry https://registry.npmjs.org/
+128 silly mapToRegistry data Result {
+128 silly mapToRegistry   raw: 'util',
+128 silly mapToRegistry   scope: null,
+128 silly mapToRegistry   escapedName: 'util',
+128 silly mapToRegistry   name: 'util',
+128 silly mapToRegistry   rawSpec: '',
+128 silly mapToRegistry   spec: 'latest',
+128 silly mapToRegistry   type: 'tag' }
+129 silly mapToRegistry uri https://registry.npmjs.org/util
+130 verbose addNameRange registry:https://registry.npmjs.org/util not in flight; fetching
+131 verbose get https://registry.npmjs.org/util not expired, no request
+132 silly addNameRange number 2 { name: 'util', range: '>=0.10.3 <0.11.0', hasData: true }
+133 silly addNameRange versions [ 'util', [ '0.4.9', '0.10.0', '0.10.1', '0.10.2', '0.10.3' ] ]
+134 silly addNamed util@0.10.3
+135 verbose addNamed "0.10.3" is a plain semver version for util
+136 silly cache afterAdd util@0.10.3
+137 verbose afterAdd C:\Users\TaSM Image\AppData\Roaming\npm-cache\util\0.10.3\package\package.json not in flight; writing
+138 verbose correctMkdir C:\Users\TaSM Image\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+139 verbose afterAdd C:\Users\TaSM Image\AppData\Roaming\npm-cache\util\0.10.3\package\package.json written
+140 silly fetchNamedPackageData inherits
+141 silly mapToRegistry name inherits
+142 silly mapToRegistry using default registry
+143 silly mapToRegistry registry https://registry.npmjs.org/
+144 silly mapToRegistry data Result {
+144 silly mapToRegistry   raw: 'inherits',
+144 silly mapToRegistry   scope: null,
+144 silly mapToRegistry   escapedName: 'inherits',
+144 silly mapToRegistry   name: 'inherits',
+144 silly mapToRegistry   rawSpec: '',
+144 silly mapToRegistry   spec: 'latest',
+144 silly mapToRegistry   type: 'tag' }
+145 silly mapToRegistry uri https://registry.npmjs.org/inherits
+146 verbose request uri https://registry.npmjs.org/inherits
+147 verbose request no auth needed
+148 info attempt registry request try #1 at 4:42:51 PM
+149 verbose etag "5a8b25af-2289"
+150 verbose lastModified Mon, 19 Feb 2018 19:29:51 GMT
+151 http request GET https://registry.npmjs.org/inherits
+152 http 304 https://registry.npmjs.org/inherits
+153 verbose headers { date: 'Fri, 23 Mar 2018 20:42:50 GMT',
+153 verbose headers   via: '1.1 varnish',
+153 verbose headers   'cache-control': 'max-age=300',
+153 verbose headers   etag: '"5a8b25af-2289"',
+153 verbose headers   age: '10692',
+153 verbose headers   connection: 'keep-alive',
+153 verbose headers   'x-served-by': 'cache-pdk17834-PDK',
+153 verbose headers   'x-cache': 'HIT',
+153 verbose headers   'x-cache-hits': '41',
+153 verbose headers   'x-timer': 'S1521837771.848861,VS0,VE0',
+153 verbose headers   vary: 'Accept-Encoding, Accept' }
+154 silly get cb [ 304,
+154 silly get   { date: 'Fri, 23 Mar 2018 20:42:50 GMT',
+154 silly get     via: '1.1 varnish',
+154 silly get     'cache-control': 'max-age=300',
+154 silly get     etag: '"5a8b25af-2289"',
+154 silly get     age: '10692',
+154 silly get     connection: 'keep-alive',
+154 silly get     'x-served-by': 'cache-pdk17834-PDK',
+154 silly get     'x-cache': 'HIT',
+154 silly get     'x-cache-hits': '41',
+154 silly get     'x-timer': 'S1521837771.848861,VS0,VE0',
+154 silly get     vary: 'Accept-Encoding, Accept' } ]
+155 verbose etag https://registry.npmjs.org/inherits from cache
+156 verbose get saving inherits to C:\Users\TaSM Image\AppData\Roaming\npm-cache\registry.npmjs.org\inherits\.cache.json
+157 verbose correctMkdir C:\Users\TaSM Image\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+158 silly resolveWithNewModule inherits@2.0.1 checking installable status
+159 silly cache add args [ 'inherits@2.0.1', null ]
+160 verbose cache add spec inherits@2.0.1
+161 silly cache add parsed spec Result {
+161 silly cache add   raw: 'inherits@2.0.1',
+161 silly cache add   scope: null,
+161 silly cache add   escapedName: 'inherits',
+161 silly cache add   name: 'inherits',
+161 silly cache add   rawSpec: '2.0.1',
+161 silly cache add   spec: '2.0.1',
+161 silly cache add   type: 'version' }
+162 silly addNamed inherits@2.0.1
+163 verbose addNamed "2.0.1" is a plain semver version for inherits
+164 silly mapToRegistry name inherits
+165 silly mapToRegistry using default registry
+166 silly mapToRegistry registry https://registry.npmjs.org/
+167 silly mapToRegistry data Result {
+167 silly mapToRegistry   raw: 'inherits',
+167 silly mapToRegistry   scope: null,
+167 silly mapToRegistry   escapedName: 'inherits',
+167 silly mapToRegistry   name: 'inherits',
+167 silly mapToRegistry   rawSpec: '',
+167 silly mapToRegistry   spec: 'latest',
+167 silly mapToRegistry   type: 'tag' }
+168 silly mapToRegistry uri https://registry.npmjs.org/inherits
+169 verbose addNameVersion registry:https://registry.npmjs.org/inherits not in flight; fetching
+170 verbose get https://registry.npmjs.org/inherits not expired, no request
+171 silly cache afterAdd inherits@2.0.1
+172 verbose afterAdd C:\Users\TaSM Image\AppData\Roaming\npm-cache\inherits\2.0.1\package\package.json not in flight; writing
+173 verbose correctMkdir C:\Users\TaSM Image\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+174 verbose afterAdd C:\Users\TaSM Image\AppData\Roaming\npm-cache\inherits\2.0.1\package\package.json written
+175 silly loadAllDepsIntoIdealTree Finishing
+176 silly loadIdealTree Finishing
+177 silly currentTree project_2@1.0.0
+178 silly idealTree project_2@1.0.0
+178 silly idealTree +-- inherits@2.0.1
+178 silly idealTree +-- path@0.12.7
+178 silly idealTree +-- process@0.11.10
+178 silly idealTree `-- util@0.10.3
+179 silly generateActionsToTake Starting
+180 silly install generateActionsToTake
+181 silly generateActionsToTake Finishing
+182 silly diffTrees action count 4
+183 silly diffTrees add inherits@2.0.1
+184 silly diffTrees add process@0.11.10
+185 silly diffTrees add util@0.10.3
+186 silly diffTrees add path@0.12.7
+187 silly decomposeActions action count 32
+188 silly decomposeActions fetch inherits@2.0.1
+189 silly decomposeActions extract inherits@2.0.1
+190 silly decomposeActions test inherits@2.0.1
+191 silly decomposeActions preinstall inherits@2.0.1
+192 silly decomposeActions build inherits@2.0.1
+193 silly decomposeActions install inherits@2.0.1
+194 silly decomposeActions postinstall inherits@2.0.1
+195 silly decomposeActions finalize inherits@2.0.1
+196 silly decomposeActions fetch process@0.11.10
+197 silly decomposeActions extract process@0.11.10
+198 silly decomposeActions test process@0.11.10
+199 silly decomposeActions preinstall process@0.11.10
+200 silly decomposeActions build process@0.11.10
+201 silly decomposeActions install process@0.11.10
+202 silly decomposeActions postinstall process@0.11.10
+203 silly decomposeActions finalize process@0.11.10
+204 silly decomposeActions fetch util@0.10.3
+205 silly decomposeActions extract util@0.10.3
+206 silly decomposeActions test util@0.10.3
+207 silly decomposeActions preinstall util@0.10.3
+208 silly decomposeActions build util@0.10.3
+209 silly decomposeActions install util@0.10.3
+210 silly decomposeActions postinstall util@0.10.3
+211 silly decomposeActions finalize util@0.10.3
+212 silly decomposeActions fetch path@0.12.7
+213 silly decomposeActions extract path@0.12.7
+214 silly decomposeActions test path@0.12.7
+215 silly decomposeActions preinstall path@0.12.7
+216 silly decomposeActions build path@0.12.7
+217 silly decomposeActions install path@0.12.7
+218 silly decomposeActions postinstall path@0.12.7
+219 silly decomposeActions finalize path@0.12.7
+220 silly runTopLevelLifecycles Starting
+221 silly executeActions Starting
+222 silly install executeActions
+223 silly doSerial global-install 0
+224 silly doParallel fetch 4
+225 verbose correctMkdir C:\Users\TaSM Image\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+226 verbose lock using C:\Users\TaSM Image\AppData\Roaming\npm-cache\_locks\staging-6981cfeeb4eafcde.lock for C:\Users\TaSM Image\Documents\RepoProj\Project_2\node_modules\.staging
+227 silly doParallel extract 4
+228 silly extract inherits@2.0.1
+229 silly extract process@0.11.10
+230 silly extract util@0.10.3
+231 silly extract path@0.12.7
+232 verbose unbuild node_modules\.staging\util-4d5d3f8a
+233 verbose unbuild node_modules\.staging\path-6f0b08e2
+234 verbose unbuild node_modules\.staging\process-22347bf2
+235 verbose unbuild node_modules\.staging\inherits-07925217
+236 silly gentlyRm C:\Users\TaSM Image\Documents\RepoProj\Project_2\node_modules\.staging\util-4d5d3f8a is being purged from base C:\Users\TaSM Image\Documents\RepoProj\Project_2
+237 verbose gentlyRm don't care about contents; nuking C:\Users\TaSM Image\Documents\RepoProj\Project_2\node_modules\.staging\util-4d5d3f8a
+238 silly gentlyRm C:\Users\TaSM Image\Documents\RepoProj\Project_2\node_modules\.staging\path-6f0b08e2 is being purged from base C:\Users\TaSM Image\Documents\RepoProj\Project_2
+239 verbose gentlyRm don't care about contents; nuking C:\Users\TaSM Image\Documents\RepoProj\Project_2\node_modules\.staging\path-6f0b08e2
+240 silly gentlyRm C:\Users\TaSM Image\Documents\RepoProj\Project_2\node_modules\.staging\process-22347bf2 is being purged from base C:\Users\TaSM Image\Documents\RepoProj\Project_2
+241 verbose gentlyRm don't care about contents; nuking C:\Users\TaSM Image\Documents\RepoProj\Project_2\node_modules\.staging\process-22347bf2
+242 verbose tar unpack C:\Users\TaSM Image\AppData\Roaming\npm-cache\util\0.10.3\package.tgz
+243 verbose tar unpacking to C:\Users\TaSM Image\Documents\RepoProj\Project_2\node_modules\.staging\util-4d5d3f8a
+244 silly gentlyRm C:\Users\TaSM Image\Documents\RepoProj\Project_2\node_modules\.staging\util-4d5d3f8a is being purged
+245 verbose gentlyRm don't care about contents; nuking C:\Users\TaSM Image\Documents\RepoProj\Project_2\node_modules\.staging\util-4d5d3f8a
+246 verbose tar unpack C:\Users\TaSM Image\AppData\Roaming\npm-cache\path\0.12.7\package.tgz
+247 verbose tar unpacking to C:\Users\TaSM Image\Documents\RepoProj\Project_2\node_modules\.staging\path-6f0b08e2
+248 silly gentlyRm C:\Users\TaSM Image\Documents\RepoProj\Project_2\node_modules\.staging\path-6f0b08e2 is being purged
+249 verbose gentlyRm don't care about contents; nuking C:\Users\TaSM Image\Documents\RepoProj\Project_2\node_modules\.staging\path-6f0b08e2
+250 silly gentlyRm C:\Users\TaSM Image\Documents\RepoProj\Project_2\node_modules\.staging\inherits-07925217 is being purged from base C:\Users\TaSM Image\Documents\RepoProj\Project_2
+251 verbose gentlyRm don't care about contents; nuking C:\Users\TaSM Image\Documents\RepoProj\Project_2\node_modules\.staging\inherits-07925217
+252 verbose tar unpack C:\Users\TaSM Image\AppData\Roaming\npm-cache\process\0.11.10\package.tgz
+253 verbose tar unpacking to C:\Users\TaSM Image\Documents\RepoProj\Project_2\node_modules\.staging\process-22347bf2
+254 silly gentlyRm C:\Users\TaSM Image\Documents\RepoProj\Project_2\node_modules\.staging\process-22347bf2 is being purged
+255 verbose gentlyRm don't care about contents; nuking C:\Users\TaSM Image\Documents\RepoProj\Project_2\node_modules\.staging\process-22347bf2
+256 silly gunzTarPerm modes [ '777', '666' ]
+257 silly gunzTarPerm modes [ '777', '666' ]
+258 verbose tar unpack C:\Users\TaSM Image\AppData\Roaming\npm-cache\inherits\2.0.1\package.tgz
+259 verbose tar unpacking to C:\Users\TaSM Image\Documents\RepoProj\Project_2\node_modules\.staging\inherits-07925217
+260 silly gentlyRm C:\Users\TaSM Image\Documents\RepoProj\Project_2\node_modules\.staging\inherits-07925217 is being purged
+261 verbose gentlyRm don't care about contents; nuking C:\Users\TaSM Image\Documents\RepoProj\Project_2\node_modules\.staging\inherits-07925217
+262 silly gunzTarPerm modes [ '777', '666' ]
+263 silly gunzTarPerm modes [ '777', '666' ]
+264 silly gunzTarPerm extractEntry package.json
+265 silly gunzTarPerm extractEntry package.json
+266 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+267 silly gunzTarPerm extractEntry package.json
+268 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+269 silly gunzTarPerm extractEntry package.json
+270 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+271 silly gunzTarPerm extractEntry README.md
+272 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+273 silly gunzTarPerm extractEntry LICENSE
+274 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+275 silly gunzTarPerm extractEntry .npmignore
+276 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+277 silly gunzTarPerm extractEntry README.md
+278 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+279 silly gunzTarPerm extractEntry README.md
+280 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+281 silly gunzTarPerm extractEntry LICENSE
+282 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+283 silly gunzTarPerm extractEntry .npmignore
+284 silly gunzTarPerm extractEntry README.md
+285 silly gunzTarPerm extractEntry LICENSE
+286 silly gunzTarPerm extractEntry path.js
+287 silly gunzTarPerm extractEntry LICENSE
+288 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+289 silly gunzTarPerm extractEntry util.js
+290 silly gunzTarPerm modified mode [ 'util.js', 420, 438 ]
+291 silly gunzTarPerm extractEntry browser.js
+292 silly gunzTarPerm modified mode [ 'browser.js', 420, 438 ]
+293 silly gunzTarPerm extractEntry index.js
+294 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+295 silly gunzTarPerm extractEntry .travis.yml
+296 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+297 silly gunzTarPerm extractEntry inherits.js
+298 silly gunzTarPerm modified mode [ 'inherits.js', 420, 438 ]
+299 silly gunzTarPerm extractEntry inherits_browser.js
+300 silly gunzTarPerm modified mode [ 'inherits_browser.js', 420, 438 ]
+301 silly gunzTarPerm extractEntry test.js
+302 silly gunzTarPerm modified mode [ 'test.js', 420, 438 ]
+303 silly gunzTarPerm extractEntry .eslintrc
+304 silly gunzTarPerm modified mode [ '.eslintrc', 420, 438 ]
+305 silly gunzTarPerm extractEntry .zuul.yml
+306 silly gunzTarPerm modified mode [ '.zuul.yml', 420, 438 ]
+307 silly gunzTarPerm extractEntry support/isBuffer.js
+308 silly gunzTarPerm modified mode [ 'support/isBuffer.js', 420, 438 ]
+309 silly gunzTarPerm extractEntry test.js
+310 silly gunzTarPerm modified mode [ 'test.js', 420, 438 ]
+311 silly gunzTarPerm extractEntry support/isBufferBrowser.js
+312 silly gunzTarPerm modified mode [ 'support/isBufferBrowser.js', 420, 438 ]
+313 silly gunzTarPerm extractEntry test/browser/inspect.js
+314 silly gunzTarPerm modified mode [ 'test/browser/inspect.js', 420, 438 ]
+315 silly gunzTarPerm extractEntry test/browser/is.js
+316 silly gunzTarPerm modified mode [ 'test/browser/is.js', 420, 438 ]
+317 silly gunzTarPerm extractEntry test/node/debug.js
+318 silly gunzTarPerm modified mode [ 'test/node/debug.js', 420, 438 ]
+319 silly gunzTarPerm extractEntry test/node/format.js
+320 silly gunzTarPerm modified mode [ 'test/node/format.js', 420, 438 ]
+321 silly gunzTarPerm extractEntry test/node/inspect.js
+322 silly gunzTarPerm modified mode [ 'test/node/inspect.js', 420, 438 ]
+323 silly gentlyRm C:\Users\TaSM Image\Documents\RepoProj\Project_2\node_modules\.staging\path-6f0b08e2\node_modules is being purged
+324 verbose gentlyRm don't care about contents; nuking C:\Users\TaSM Image\Documents\RepoProj\Project_2\node_modules\.staging\path-6f0b08e2\node_modules
+325 silly gunzTarPerm extractEntry test/node/log.js
+326 silly gunzTarPerm modified mode [ 'test/node/log.js', 420, 438 ]
+327 silly gunzTarPerm extractEntry test/node/util.js
+328 silly gunzTarPerm modified mode [ 'test/node/util.js', 420, 438 ]
+329 silly gentlyRm C:\Users\TaSM Image\Documents\RepoProj\Project_2\node_modules\.staging\inherits-07925217\node_modules is being purged
+330 verbose gentlyRm don't care about contents; nuking C:\Users\TaSM Image\Documents\RepoProj\Project_2\node_modules\.staging\inherits-07925217\node_modules
+331 silly gentlyRm C:\Users\TaSM Image\Documents\RepoProj\Project_2\node_modules\.staging\process-22347bf2\node_modules is being purged
+332 verbose gentlyRm don't care about contents; nuking C:\Users\TaSM Image\Documents\RepoProj\Project_2\node_modules\.staging\process-22347bf2\node_modules
+333 silly gentlyRm C:\Users\TaSM Image\Documents\RepoProj\Project_2\node_modules\.staging\util-4d5d3f8a\node_modules is being purged
+334 verbose gentlyRm don't care about contents; nuking C:\Users\TaSM Image\Documents\RepoProj\Project_2\node_modules\.staging\util-4d5d3f8a\node_modules
+335 silly doParallel preinstall 4
+336 silly preinstall inherits@2.0.1 C:\Users\TaSM Image\Documents\RepoProj\Project_2\node_modules\.staging\inherits-07925217
+337 info lifecycle inherits@2.0.1~preinstall: inherits@2.0.1
+338 silly preinstall process@0.11.10 C:\Users\TaSM Image\Documents\RepoProj\Project_2\node_modules\.staging\process-22347bf2
+339 info lifecycle process@0.11.10~preinstall: process@0.11.10
+340 silly preinstall util@0.10.3 C:\Users\TaSM Image\Documents\RepoProj\Project_2\node_modules\.staging\util-4d5d3f8a
+341 info lifecycle util@0.10.3~preinstall: util@0.10.3
+342 silly preinstall path@0.12.7 C:\Users\TaSM Image\Documents\RepoProj\Project_2\node_modules\.staging\path-6f0b08e2
+343 info lifecycle path@0.12.7~preinstall: path@0.12.7
+344 silly lifecycle inherits@2.0.1~preinstall: no script for preinstall, continuing
+345 silly lifecycle process@0.11.10~preinstall: no script for preinstall, continuing
+346 silly lifecycle util@0.10.3~preinstall: no script for preinstall, continuing
+347 silly lifecycle path@0.12.7~preinstall: no script for preinstall, continuing
+348 silly doReverseSerial remove 0
+349 silly doSerial move 0
+350 silly doSerial finalize 4
+351 silly finalize C:\Users\TaSM Image\Documents\RepoProj\Project_2\node_modules\inherits
+352 verbose unlock done using C:\Users\TaSM Image\AppData\Roaming\npm-cache\_locks\staging-6981cfeeb4eafcde.lock for C:\Users\TaSM Image\Documents\RepoProj\Project_2\node_modules\.staging
+353 silly rollbackFailedOptional Starting
+354 silly rollbackFailedOptional Finishing
+355 silly runTopLevelLifecycles Finishing
+356 silly install printInstalled
+357 warn project_2@1.0.0 No description
+358 verbose If you need help, you may report this error at:
+358 verbose     <https://github.com/npm/npm/issues>
+359 verbose stack Error: EPERM: operation not permitted, rename 'C:\Users\TaSM Image\Documents\RepoProj\Project_2\node_modules\.staging\inherits-07925217' -> 'C:\Users\TaSM Image\Documents\RepoProj\Project_2\node_modules\inherits'
+359 verbose stack     at destStatted (C:\Program Files\nodejs\node_modules\npm\lib\install\action\finalize.js:25:7)
+359 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\graceful-fs\polyfills.js:264:29
+359 verbose stack     at FSReqWrap.oncomplete (fs.js:123:15)
+359 verbose stack
+359 verbose stack Error: EPERM: operation not permitted, rename 'C:\Users\TaSM Image\Documents\RepoProj\Project_2\node_modules\.staging\inherits-07925217' -> 'C:\Users\TaSM Image\Documents\RepoProj\Project_2\node_modules\inherits'
+359 verbose stack     at Error (native)
+360 verbose cwd C:\Users\TaSM Image\Documents\RepoProj\Project_2
+361 error Windows_NT 6.1.7601
+362 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "path"
+363 error node v6.11.2
+364 error npm  v3.10.10
+365 error path C:\Users\TaSM Image\Documents\RepoProj\Project_2\node_modules\.staging\inherits-07925217
+366 error code EPERM
+367 error errno -4048
+368 error syscall rename
+369 error Error: EPERM: operation not permitted, rename 'C:\Users\TaSM Image\Documents\RepoProj\Project_2\node_modules\.staging\inherits-07925217' -> 'C:\Users\TaSM Image\Documents\RepoProj\Project_2\node_modules\inherits'
+369 error     at destStatted (C:\Program Files\nodejs\node_modules\npm\lib\install\action\finalize.js:25:7)
+369 error     at C:\Program Files\nodejs\node_modules\npm\node_modules\graceful-fs\polyfills.js:264:29
+369 error     at FSReqWrap.oncomplete (fs.js:123:15)
+369 error
+369 error Error: EPERM: operation not permitted, rename 'C:\Users\TaSM Image\Documents\RepoProj\Project_2\node_modules\.staging\inherits-07925217' -> 'C:\Users\TaSM Image\Documents\RepoProj\Project_2\node_modules\inherits'
+369 error     at Error (native)
+369 error  { Error: EPERM: operation not permitted, rename 'C:\Users\TaSM Image\Documents\RepoProj\Project_2\node_modules\.staging\inherits-07925217' -> 'C:\Users\TaSM Image\Documents\RepoProj\Project_2\node_modules\inherits'
+369 error     at destStatted (C:\Program Files\nodejs\node_modules\npm\lib\install\action\finalize.js:25:7)
+369 error     at C:\Program Files\nodejs\node_modules\npm\node_modules\graceful-fs\polyfills.js:264:29
+369 error     at FSReqWrap.oncomplete (fs.js:123:15)
+369 error
+369 error Error: EPERM: operation not permitted, rename 'C:\Users\TaSM Image\Documents\RepoProj\Project_2\node_modules\.staging\inherits-07925217' -> 'C:\Users\TaSM Image\Documents\RepoProj\Project_2\node_modules\inherits'
+369 error     at Error (native) parent: 'project_2' }
+370 error Please try running this command again as root/Administrator.
+371 verbose exit [ -4048, true ]

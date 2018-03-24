@@ -1,16 +1,16 @@
 {
-  "name": "Project_2",
+  "name": "project_2",
   "version": "1.0.0",
   "description": "",
-  "main": "customer.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/msptc/Project_2.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {

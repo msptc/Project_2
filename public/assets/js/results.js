@@ -95,4 +95,10 @@ $(document).ready(function() {
 
   })
 
+
+
+  ///////////////Add items to cart//////////////////////
+
+  
+
 });
