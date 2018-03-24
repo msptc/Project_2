@@ -4,9 +4,9 @@ var connection = mysql.createConnection({
   port: 3306,
   host: "localhost",
   user: "root",
-  password: "root",
+  password: "letmein",
   database: "Warehouse_db"
-})
+});
 
 connection.connect(function(err){
   if (err){

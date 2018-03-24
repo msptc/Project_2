@@ -1,10 +1,11 @@
 {
-  "name": "Project_2",
+  "name": "project_2",
   "version": "1.0.0",
   "description": "",
   "main": "customer.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,20 @@
   "bugs": {
     "url": "https://github.com/msptc/Project_2/issues"
   },
-  "homepage": "https://github.com/msptc/Project_2#readme"
+  "homepage": "https://github.com/msptc/Project_2#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "4.16.3",
+    "express-handlebars": "^3.0.0",
+    "init": "^0.1.2",
+    "mocha": "^5.0.5",
+    "mysql": "^2.15.0",
+    "mysql2": "^1.5.3",
+    "save": "^2.3.2",
+    "sequelize": "^4.37.1",
+    "socket.io": "2.0.4",
+    "wowjs": "^1.1.3"
+  },
+  "devDependencies": {}
 }

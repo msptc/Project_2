@@ -1,11 +1,5 @@
-var mysql = require('mysql');
-
-var connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'root',
-    database: 'Warehouse_db'
-});
+var orm = require("../config/orm.js");
+var connection = require("../config/connection");
 
 // displays inventory from DB, then starts nested function calls
 function displayInventory() {
@@ -17,7 +11,7 @@ function displayInventory() {
         }
         });
     };
-    
+
         function processOrder(id, quantity){
         connection.query('SELECT StockQuantity FROM products WHERE ItemID = ?', [id], function(err, rows, fields){
             if(err) throw err;
