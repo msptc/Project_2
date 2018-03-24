@@ -17,7 +17,7 @@ function displayInventory() {
         }
         });
     };
-    
+
         function processOrder(id, quantity){
         connection.query('SELECT StockQuantity FROM products WHERE ItemID = ?', [id], function(err, rows, fields){
             if(err) throw err;
